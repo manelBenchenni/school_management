@@ -23,5 +23,8 @@ class AppServiceProvider extends ServiceProvider
     {
         Vite::prefetch(concurrency: 3);
         Schema::defaultStringLength(191);
+         if ($this->app->environment('production')) {
+        URL::forceScheme('https');
+    }
     }
 }
