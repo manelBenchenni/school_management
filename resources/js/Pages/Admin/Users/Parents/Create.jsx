@@ -4,6 +4,7 @@ import InputLabel from '@/Components/InputLabel';
 import PrimaryButton from '@/Components/PrimaryButton';
 import SecondaryButton from '@/Components/SecondaryButton';
 import TextInput from '@/Components/TextInput';
+import PasswordInput from '@/Components/PasswordInput';
 import Card from '@/Components/Card';
 import { Head, Link, useForm } from '@inertiajs/react';
 
@@ -49,7 +50,7 @@ export default function Create({ students }) {
                         </div>
                         <div>
                             <InputLabel htmlFor="password" value="Password" />
-                            <TextInput id="password" type="password" value={data.password} onChange={(e) => setData('password', e.target.value)} />
+                            <PasswordInput id="password" value={data.password} onChange={(e) => setData('password', e.target.value)} />
                             <InputError message={errors.password} />
                         </div>
                         <div>

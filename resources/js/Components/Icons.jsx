@@ -116,3 +116,57 @@ export function StarIcon(props) {
         </svg>
     );
 }
+
+export function EyeIcon(props) {
+    return (
+        <svg viewBox="0 0 24 24" {...base} {...props}>
+            <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Z" />
+            <circle cx="12" cy="12" r="3" />
+        </svg>
+    );
+}
+
+export function EyeOffIcon(props) {
+    return (
+        <svg viewBox="0 0 24 24" {...base} {...props}>
+            <path d="M3 3l18 18" />
+            <path d="M10.6 5.2A10.4 10.4 0 0 1 12 5c6.4 0 10 7 10 7a15.6 15.6 0 0 1-3.4 4.3M6.6 6.6C4 8.3 2 12 2 12s3.6 7 10 7c1.4 0 2.6-.3 3.7-.8" />
+            <path d="M9.9 9.9a3 3 0 0 0 4.2 4.2" />
+        </svg>
+    );
+}
+
+export function ChevronLeftIcon(props) {
+    return (
+        <svg viewBox="0 0 24 24" {...base} {...props}>
+            <path d="m15 18-6-6 6-6" />
+        </svg>
+    );
+}
+
+export function ChevronRightIcon(props) {
+    return (
+        <svg viewBox="0 0 24 24" {...base} {...props}>
+            <path d="m9 6 6 6-6 6" />
+        </svg>
+    );
+}
+
+export function ClipboardIcon(props) {
+    return (
+        <svg viewBox="0 0 24 24" {...base} {...props}>
+            <rect x="6" y="4" width="12" height="17" rx="2" />
+            <path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1" />
+            <path d="M9 11h6M9 15h6" />
+        </svg>
+    );
+}
+
+export function WalletIcon(props) {
+    return (
+        <svg viewBox="0 0 24 24" {...base} {...props}>
+            <path d="M3 7.5A1.5 1.5 0 0 1 4.5 6h13A1.5 1.5 0 0 1 19 7.5V9H4.5A1.5 1.5 0 0 1 3 7.5Z" />
+            <path d="M3 9v9.5A1.5 1.5 0 0 0 4.5 20h14a1.5 1.5 0 0 0 1.5-1.5V11a1.5 1.5 0 0 0-1.5-1.5H16a2 2 0 1 0 0 4h4.5" />
+        </svg>
+    );
+}
